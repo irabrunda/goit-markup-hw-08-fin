@@ -1,11 +1,12 @@
 .footer__subscription {
   display: block;
+  padding-bottom: 50px;
   
   @media screen and (min-width: 1200px) {
     margin-left: 90px;
+    padding-bottom: 0;
   }
 }
-  
 .footer__mailing {
   @media screen and (min-width: 1200px) {
     display: flex;
@@ -13,7 +14,7 @@
     align-self: baseline;
   }
 }
-  
+
 .footer__input {
   position: relative;
   margin-bottom: 20px;
