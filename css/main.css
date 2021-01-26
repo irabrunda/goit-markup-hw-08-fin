@@ -745,6 +745,7 @@ footer {
   text-decoration: none;
 }
 footer .container {
+  padding-top: 60px;
   padding-bottom: 60px;
 }
 
@@ -787,7 +788,6 @@ address {
 .footer__logo {
   display: flex;
   justify-content: center;
-  margin-top: 60px;
   margin-bottom: 20px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;

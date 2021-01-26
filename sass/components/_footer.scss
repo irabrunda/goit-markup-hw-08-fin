@@ -4,10 +4,10 @@ footer {
   text-decoration: none;
 
   & .container {
+    padding-top: 60px;
     padding-bottom: 60px;
   }
 }
-
    
 address {
   // margin-top: 20px;
@@ -26,7 +26,6 @@ address {
     padding: 0 80px;
   }
       
-  
   @media screen and (min-width: 1200px) {
     flex-wrap: nowrap;
     justify-content: baseline;
@@ -46,7 +45,6 @@ address {
 .footer__logo {
   display: flex;
   justify-content: center;
-  margin-top: 60px;
   margin-bottom: 20px;
 
   font-family: $logo-font;
