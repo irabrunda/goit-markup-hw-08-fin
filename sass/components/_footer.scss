@@ -6,8 +6,8 @@ footer {
 }
     
 address {
+  // margin-top: 20px;
   font-style: normal;
-  margin-top: 20px;
 }
   
 .footer {
@@ -47,6 +47,7 @@ address {
   font-family: $logo-font;
   font-weight: 700;
   font-size: 26px;
+  line-height: 1.2;
   color: $primary-white-color;
 
   @media screen and (min-width: 1200px) {
@@ -55,12 +56,19 @@ address {
 }
   
 .footer__nav {
+  width: 232px;
+  margin: 0 auto 60px auto;
   text-align: center;
-  margin-bottom: 60px;
+  // margin-bottom: 60px;
+
+  & li:not(:last-child) {
+    margin-bottom: 8px;
+  }
   
   @media screen and (min-width: 1200px) {
     text-align: start;
-  
+    margin-bottom: 0;
+
     & li:not(:last-child) {
       margin-bottom: 9px;
     }
@@ -71,7 +79,7 @@ address {
   font-family: $main-font;
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 21px;
   letter-spacing: 0.03em;
   color: $footer-nav-color;
   transition: $timing-function;
@@ -79,7 +87,10 @@ address {
   &:focus {
     color: $accent-color;
   }
-    
+
+  @media screen and (min-width: 1200px) {
+    line-height: 1.5;
+  }
 }
   
 .footer__nav .map {
