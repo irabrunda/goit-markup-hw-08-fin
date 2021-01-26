@@ -1,10 +1,14 @@
 footer {
-  padding: 60px 0;
   background-color: $dark-bg-color;
   color: $primary-white-color;
   text-decoration: none;
+
+  & .container {
+    padding-bottom: 60px;
+  }
 }
-    
+
+   
 address {
   // margin-top: 20px;
   font-style: normal;
@@ -42,16 +46,19 @@ address {
 .footer__logo {
   display: flex;
   justify-content: center;
+  margin-top: 60px;
   margin-bottom: 20px;
 
   font-family: $logo-font;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
+  font-size: 24px;
+  line-height: 1.17;
   color: $primary-white-color;
 
   @media screen and (min-width: 1200px) {
     justify-content: flex-start;
+    font-size: 26px;
+    line-height: 1.2;
   }
 }
   
@@ -120,6 +127,10 @@ address {
   margin-left: 0;
   margin-right: auto;
   margin-bottom: 60px;  
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;  
+  }
 }
   
 .social-item__footer:not(:last-child) {
@@ -158,9 +169,11 @@ address {
   
 .footer__subscription {
   display: block;
+  padding-bottom: 50px;
   
   @media screen and (min-width: 1200px) {
     margin-left: 90px;
+    padding-bottom: 0;
   }
 }
   
